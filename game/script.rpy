@@ -77,7 +77,7 @@ label start:
     "{i}What should i do?"
 
     menu:
-        "Accept andd go with him":
+        "Accept and go with him":
             jump choice_1
 
         "Refuse and go home":
@@ -94,6 +94,6 @@ label start:
         jump done_1
     
     label done_1
-     "{1}that's all for now"
+     "{1}Work In Progress"
 
     return
