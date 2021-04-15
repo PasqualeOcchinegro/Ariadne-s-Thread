@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 28: end of line expected.
+    a "It's so loud here, I hope it was the right decision to come to the club tonight.":
+                                                                                        ^
+
+Ren'Py Version: Ren'Py 7.4.4.1439
+Mon Apr 12 16:00:16 2021
