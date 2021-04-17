@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 28: end of line expected.
-    a "It's so loud here, I hope it was the right decision to come to the club tonight.":
-                                                                                        ^
+File "game/script.rpy", line 56: expected ':' not found.
+    label mojito_no
+                   ^
+
+File "game/script.rpy", line 61: expected ':' not found.
+    label mojito_end
+                    ^
 
 Ren'Py Version: Ren'Py 7.4.4.1439
-Mon Apr 12 16:00:16 2021
+Sat Apr 17 12:54:16 2021
