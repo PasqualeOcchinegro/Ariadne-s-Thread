@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 56: expected ':' not found.
-    label mojito_no
-                   ^
-
-File "game/script.rpy", line 61: expected ':' not found.
-    label mojito_end
-                    ^
+File "game/script.rpy", line 197: end of line expected.
+    m "What do you mean?? Why are you laughing about that. You are mine! Does it make you laugh that I want you only for myself?".
+                                                                                                                                 ^
 
 Ren'Py Version: Ren'Py 7.4.4.1439
-Sat Apr 17 12:54:16 2021
+Fri Apr 30 12:12:41 2021
