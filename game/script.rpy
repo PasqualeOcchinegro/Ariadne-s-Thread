@@ -3,23 +3,32 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define a = Character("Arianna")
-define m = Character("Matteo")
-define k = Character("Kim")
+#8533FF Arianna purple
+#5A22AD darker purple
+#C49EFF lighter purple
+#4B1D91 even darker purple
+#AB77FF 
+
+define a = Character("Arianna", color="#AB77FF")
+define m = Character("Matteo", color="229FB5")
+define k = Character("Kim", color="#F2DD6E")
+define ah = Character("Arianna (to herself)", color="#AB77FF")
 
 # The game starts here.
 
 label start:
 
-    "{i}Matteo and me met through mutual friends."
-    "{i}I've met several times before but never alone, so one day he invited me out together for a drink."
+    play music "audio//vntrack.mp3" volume 0.1
+
+    "{i}Matteo and Arianna met through mutual friends."
+    "{i}They've met several times before but never alone, so one day he invited her out for a drink."
 
     scene bg disco club
 
-    "{i}It's so loud here, I hope it was the right decision to come to the club tonight."
-    "{i}There are so many people... I wonder how I can find Matteo among them."
-    "{i}I should be at home, finishing the project that is due Monday. And yet here I am, looking for a person I have never met alone before."
-    "{i}I hope we will find some topics to talk about. Oh god, I am nervous, where is Matteo?"
+    ah "It's so loud here, I hope it was the right decision to come to the club tonight."
+    ah "There are so many people... I wonder how I can find Matteo among them."
+    ah "I should be at home, finishing the project that is due Monday. And yet here I am, looking for a person I have never met alone before."
+    ah "I hope we will find some topics to talk about. Oh god, I am nervous, where is Matteo?"
 
     show matteo happy
 
@@ -39,17 +48,17 @@ label start:
     m "Don't worry a Mojito doesn't really taste like alcohol. You will see that you will like it a lot. This place has the best Mojito's in town!"
 
     menu:
-        "I guess one will be fine...":
+        "Accept the drink":
             jump mojito_yes
 
-        "No, I really shouldn't drink":
+        "Refuse the offer":
             jump mojito_no
 
 
     label mojito_yes:
     
-    "{i}I am not sure if I should drink, I usually don't respond well to alcohol."
-    "{i}But I guess the drink will make me feel more confident and less shy"
+    ah "I am not sure if I should drink, I usually don't respond well to alcohol."
+    ah "But I guess the drink will make me feel more confident and less shy"
     a "Ok, let's try"
     m "Two mojitos please!"
     jump dance
@@ -58,7 +67,7 @@ label start:
     label mojito_no:
     
     m "Two mojitos please!"
-    "{i}Oh well, now he already bought me one so I guess I should drink it. I don't want to be rude."
+    ah "Oh well, now he already bought me one so I guess I should drink it. I don't want to be rude."
     jump dance
 
 
@@ -79,13 +88,13 @@ label start:
     m "Sure, let's get another drink"
     a "Haha, no I will just get a cold glass of water"
     m "C'mon, let's get another mojito!"
-    "{i}I do really like Matteo and I don't want to disappoint him, but should I get another drink?"
+    ah "I do really like Matteo and I don't want to disappoint him, but should I get another drink?"
 
     menu:
-        "Yes, one last drink":
+        "Drink another mojito":
             jump second_drink_yes
 
-        "No, I have to work tomorrow!":
+        "Turn down the second drink":
             jump second_drink_no
 
 
@@ -129,22 +138,22 @@ label start:
     m "Here you go, cheers!"
     a "Cheers!"
     m "You are very beautiful and I had an amazing evening with you. May I kiss you."
-    "{i}We kissed."
+    ah "We kissed."
     m "Arianna, I want to be with you. Please stay here for the night."
-    "{i}I do like Matteo and I don't want to say no because what if he will lose interest in me."
+    ah "I do like Matteo and I don't want to say no because what if he will lose interest in me."
 
     menu:
-        "Stay for the night":
+        "Stay with him for the night":
             jump stay_yes
 
-        "Don't stay":
+        "Go home":
             jump stay_no
 
 
     label stay_yes:
 
     a "Alright I will stay here for the night."
-    "{i}I slept with him. We started dating"
+    "{i}After that night Arianna and Matteo started dating"
     jump ariannas_house
 
 
@@ -172,10 +181,11 @@ label start:
     m "I would never do that. Don't you trust me?"
     a "I do, but can you promise?"
     m "Yes, I promise you. The video is just between you and me!"
-    "{i}I am not sure if I should say yes. I don't want to end up naked on the internet. It just doesn't feel right, but I don't want to disappoint Matteo."
+    ah "I am not sure if I should say yes. I don't want to end up naked on the internet."
+    ah "It just doesn't feel right, but I don't want to disappoint Matteo."
 
     menu:
-        "Ok, let's make the video":
+        "Accept the proposal":
             jump video_yes
 
         "Don't make the video":
@@ -186,8 +196,8 @@ label start:
     
     scene bg black
 
-    "{i}A few days have passed since then. I have been busy with work and wasn't able to meet Matteo."
-    "{i}I was working on a project for the company when i got a call."
+    "{i}A few days have passed since then. Arianna had been busy with work and she wasn't able to meet Matteo."
+    "{i}One day, she was working on a project for the company when she got a call."
 
     scene bg office
 
@@ -195,32 +205,35 @@ label start:
     m "Hey, why can't you find time to meet me. I am your boyfriend! I want to see you."
     a "I am so sorry, but we are working on this project at work that is due next week."
     a "Also, I am at work right now so I can't really talk to you but I promise to call back tonight!"
-    "{i}I closed the call and returned on my work, when a friend of mine, Kim, sent me a message."
+    "{i}She closed the call and returned to her work, when a friend of her, Kim, sent her a message."
     k "Hi Arianna, I was with Jon and he showed me a video from a group chat."
     k "I'm sorry, I don't really know how to tell you this, but it's you sleeping with Matteo in the video."
     k "I thought you should know. I am always here to talk xxx"
-    "{i}I called Matteo back instantly"
+    "{i}She instantly called Matteo back"
     a "HOW COULD YOU???? YOU PROMISED ME YOU WOULDN'T SHOW OUR LITTLE VIDEO TO ANYONE"
     m "Well, its my video after all, I took it so I can do anything I want with it."
     a "You liar, you promised me not to show it to anyone!"
     m "But I didn't see you for days. I am annoyed with you."
-    "{i}I started crying hangs up with phone."
-    "{i}I hated him. I didn't know how could he do that to me."
-    "{i}I decided that I didn't want to see Matteo ever again."
+    "{i}As she put down her phone she started crying"
+    ah "I hate him. How could he do that to me?"
+    ah "I don't want to see Matteo ever again."
 
-    scene bg black
+    scene bg flowers
 
-    "{i}But during the following days I was constantly showered with messages from an apologizing Matteo and flowers found on my office desk."
-    "{i}He said he was a fool and that he lost his mind only because he couldn't be with me."
-    "{i}After the yet another flower bouquet at my office my co-workers told me that i should forgive him, give him another chance, but they don't know what he did to me..."
-    "{i}Matteo has been cute sending me so many text messages and presents. But can I forgive hime for what he has done to me?"
-    "{i}Kim told me to report him to the police and get help in the Anti-violence center. Maybe I should consider that."
+    "{i}During the following days she was constantly showered with apologizing messages from Matteo."
+    "{i}Every morning a new bouquet of flowers was left on her office desk."
+    "{i}He said he was a fool and that he was losing his mind because he couldn't be with her."
+    "{i}After yet another flower bouquet at her office her co-workers started telling her that she should forgive him, give him another chance."
+    ah "I understand what they are thinking, but they don't know what he did to me..."
+    ah "Still, Matteo has been cute sending me so many text messages and presents." 
+    ah "Am I a bad person for not forgiving him?"
+    ah "Kim told me to report him to the postal police and get help in the Anti-violence center. Maybe I should consider that."
 
     menu:
-        "Give Matteo another chance":
+        "Think about it for a few days":
             jump last_chance_yes
 
-        "Report Matteo to the police":
+        "Report Matteo to the postal police":
             jump last_chance_no
 
     label video_no:
@@ -228,14 +241,18 @@ label start:
 
     label mountain_cabin:
 
+    scene bg smartphone
+
+    "{i}The next day she received a message from Matteo"
+    m "Hi, I am sorry for being rude yesterday night. I was just sad that you already wanted to go home."
+    m "I wanted to spend more time with you because I like you a lot. Please let's meet again very soon."
+    ah "Thats's so sweet of him to apologize. I really like Matteo as well."
+    ah "I think I'll call him and ask if we can meet tonight again."
+
     scene bg black
 
-    "{i}The next day I recieved a message from Matteo"
-    m "Hi, I am sorry for being rude yesterday night. I was just sad that you already wanted to go home."
-    m "I wanted to spend more time with you because I like you a lot. Please lets meet again very soon."
-    "{i}Thats's so sweet of him to apologize. I really like Matteo as well. I think I'll call him and ask if we can meet tonight again."
-    "{i}Time has passed since then, and now we are in a relationship." 
-    "{i}We even decided to pass the easter holidays in the mountains alone."
+    "{i}Time has passed since then. They started dating" 
+    "{i}They decided to pass the Easter holidays in the mountains alone."
 
     scene bg cabin 
 
@@ -249,22 +266,23 @@ label start:
     show matteo angry 
 
     m "What do you mean?? Why are you laughing about that. You are mine! Does it make you laugh that I want you only for myself?"
-    "{i}What's going on, why is Matteo so possessive. I really don't think this is a healthy relationship."
+    ah "What's going on, why is Matteo so possessive. I really don't think this is a healthy relationship."
 
     menu:
-        "Tell Matteo his behaviour is too possessive":
+        "Start considering breaking up with him":
             jump last_chance_yes
 
-        "Matteo is a little bit possessive but it's cute that he loves me so much":
+        "Stay with him":
             jump last_chance_yes
 
     label last_chance_no:
     
     scene bg black
 
-    "Sharing an intimate video is unacceptable. Maybe I should listen to Kim and go to the Police to report Matteo. But that would be embarrassing... I am not sure what to do."
-    "A few weeks later. Arianna is still in the relationship with Matteo, even though the relationship doesn't make her feel good. She struggels to get out of the relationship."
-    "What you have seen in this game is an example of stalking and abusive relationships. In many cases, violence in abusive relationships follows a predictable cycle."
+    ah "Sharing an intimate video is unacceptable. Maybe I should listen to Kim and go to the Police to report Matteo."
+    ah "But that would be embarrassing... I am not sure what to do."
+    "{i}A few weeks passed. Arianna is still in a relationship with Matteo, even though the relationship doesn't make her feel good."
+    "{i}She struggles to get out of the relationship."
     jump END
 
 
@@ -272,38 +290,41 @@ label start:
 
     scene bg black
     
-    "{i}Matteo and I have been in a relationship for two months now. We see each other nearly every day."
+    "{i}Matteo and Arianna have been in a relationship for two months now. They see each other nearly every day."
 
     scene bg bar
 
-    "{i}One afternoon I was hanging out with some friends when he called me."
+    "{i}One afternoon she was hanging out with some friends when he called her."
     m "Arianna, where are you?? I am at your house but you are not home."
     a "I am at a Bar with my co-workers. They texted me a few hours ago and we wanted to celebrate the project we completed. I am sorry I didn't tell you..."
     m "What, why are you with them? You should be spending your time with me instead. We are in a relationship, you only need me in your life"
     a "But why can't I just spend one evening with my friends?"
     m "Because I love you and I want you to show me that you love me too. Please, make me happy and just hang out with me."
-    "{i}Maybe Matteo is right, I should be with him. I am neglecting him"
+    ah "Maybe Matteo is right, I should be with him. I am neglecting him"
 
     scene bg black
 
-    "{i}One year after Matteo and I started dating, I moved in to Matteos house."
+    "{i}One year after Matteo and Arianna started dating, she moved into Matteo's house."
 
     scene bg matteos house 
 
-    "{i}I really don't feel like it is the right decision to move in with Matteo already, but he asked me every day and I just couldn't say no any longer."
-    "{i}Since I moved in Matteo has been controling every step I take. He is even listening to my phone calls. Every time I call a friend, he gets angry with me."
-    "{i}I don't dare to call them anymore because he gets so mad. The only place where I am still free is my mind."
-    "{i}One evening Matteo came home from work while i was on my phone."
+    ah "I really didn't feel like it was the right decision to move in with Matteo so soon."
+    ah "But he asked me every day and I just couldn't say no any longer."
+    "{i}Since she moved in, Matteo has been controlling every her step. He listened to her phone calls."
+    "{i}He became aggressive every time she called a friend."
+    "{i}She didn't dare calling them anymore when he was near, fearing his reaction."
+    "{i}One evening Matteo came home from work while Arianna was on her phone."
 
     show matteo angry
 
-    m "No, hang up your phone call, now! I am home now, i had a long day at work and the dinner is not ready??"
+    m "No, hang up your phone call, now! I am home now, I had a long day at work and the dinner is not ready??"
     a "But I was at work as well and I just came home."
     m "I told you to stop working. You have to keep up with the house work. I can't believe that dinner isn't even ready yet."
     a "How am I supposed to handle work and household at the same time? And I love my job."
-    "{i}Matteo slapped me and left the house slamming the door."
-    "{i}I made him so mad again. I am really scared. Maybe I should try the anti-violence center that Kim recommended." 
-    "{i}But maybe it will all be fine and Matteo will never do it again. What should I do?"
+    "{i}He slapped her."
+    "{i}Then he left the house slamming the door."
+    ah "I made him so mad again... I am really scared. Maybe I should try the anti-violence center that Kim recommended." 
+    ah "But maybe it will all be fine and Matteo will never do it again. What should I do?"
 
     menu:
         "Go to the anti-violence center":
@@ -317,8 +338,7 @@ label start:
     
     scene bg black 
 
-    "{i}I started attending an anti-violence center and since then i've become aware that I had a toxic relationship with Matteo."
-    "What you have seen in this game is an example of stalking and violent relationships."
+    "{i}She started visiting regularly an anti-violence center and since then she became aware that she had a toxic relationship with Matteo."
     jump END
 
 
@@ -326,19 +346,28 @@ label start:
     
     scene bg black
 
-    "{i}I sat down and started crying"
-    "{i}Our relationship continued and the violent attacks repeated themselves every now and then."
-    "{i}After the attacks Matteo is always apologizing and very kind towards me."
-    "{i}He also takes me on some trips to the sea and the mountains but then he starts beeing violent again."
-    "{i}The relationship doesn't make me feel good, but I struggle to get out of it."
-    "What you have seen in this game is an example of stalking and abusive relationships. In many cases, violence in abusive relationships follows a predictable cycle."
+    "{i}She sat down and started crying"
+    "{i}Their relationship continued and the violent attacks repeated themselves every now and then."
+    "{i}After the attacks Matteo is always apologizing and kind towards her."
+    "{i}Sometimes he took her on some trips to the sea and the mountains but inevitably he would show his violent side again and again."
+    "{i}The relationship didn't make Arianna feel good, but she struggled to get out of it."
     jump END
 
 
     label END:
-    "The “cycle of violence” consists of three phases that repeat themselves constantly.
-    The first is the tension building phase. In this phase, the relationship starts of being fine but then tension begins to build up.
-    The second stage is the actual explosion phase where the physical abuse occurs.
-    The last phase is called the honeymoon phase. In this phase of the cycle of violence, the abuser shows kind and loving behavior towards the victim."
+    
+    "What you have seen in this game is an example of stalking and abusive relationships."
+    "In many cases, violence in abusive relationships follows a predictable cycle."
+
+    show bg cycle 
+
+    "The “cycle of violence” consists of three phases that repeat themselves constantly."
+    "The first is the tension building phase. In this phase, the relationship starts of being fine but then tension begins to build up."
+    "The second stage is the actual explosion phase where the physical abuse occurs."
+    "The last phase is called the honeymoon phase. In this phase of the cycle of violence, the abuser shows kind and loving behavior towards the victim."
+    "Are you or someone you care about in an abusive relationship? Learn about domestic abuse and by following the link to the following websites."
+    "www.netyx.it is a website created by health and social care professionals that offers information and guidance for people dealing with complicated or difficult relationships."
+    "http://stannefuori.it/ provides help in cases of Domestic Violence and Abuse and explains how to deal with a violent situation."
+    "Thank you for playing."
 
     return

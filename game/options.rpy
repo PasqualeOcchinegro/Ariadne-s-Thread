@@ -1,4 +1,4 @@
-﻿## This file contains options that can be changed to customize your game.
+## This file contains options that can be changed to customize your game.
 ##
 ## Lines beginning with two '#' marks are comments, and you shouldn't uncomment
 ## them. Lines beginning with a single '#' mark are commented-out code, and you
@@ -30,6 +30,70 @@ define config.version = "1.0"
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+ATS Milan:
+
+Maria Grazia Cremona
+Patrizia Madoni
+Elena Modena
+
+Aurelio Mosca\n
+Serena Marcella Romanato
+
+
+Caritas Ambrosiana Foundation: 
+Claudia Biondi
+Sabrina Ignazi
+
+
+Politecnico di Milano:
+
+Giovanni Agosta 
+
+Maresa Bertolo 
+
+Anca Serbanescu 
+
+
+SVS DAD Onlus: 
+
+Emanuela Borghi
+
+Claudia Di Palma
+
+Nicole Piccolo
+
+
+SVSeD: 
+
+Mitia Rendiniello 
+
+
+Avatar Designed by Freepik
+
+Disco club - Pic by Edoardo Tommasini from Pexels
+
+Lounge Bar - Pic by Pixabay from Pexels
+
+night road - Pic by Lisa from Pexels
+
+Matteos house - Pic by Vecislavas Popa from Pexels
+
+Ariannas house - Pic by Mo from Pexels
+
+Office - Pic by Tranmautritam from Pexels
+
+Cabin - Pic by Eneida Nieves from Pexels
+
+Bar - Pic by ELEVATE from Pexels
+
+Smartphone - Pic by PhotoMIX Company from Pexels
+
+Flowers - Pic by Lum3n from Pexels
+
+Cycle - Pic by ??? from ???
+
+
+Background music from ???
 """)
 
 
