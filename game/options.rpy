@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("Filo di Arianna")
+define config.name = _("Ariadne's Thread")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.0"
+define config.version = "3.0"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -33,15 +33,20 @@ define gui.about = _p("""
 ATS Milan:
 
 Maria Grazia Cremona
+
 Patrizia Madoni
+
 Elena Modena
 
-Aurelio Mosca\n
+Aurelio Mosca
+
 Serena Marcella Romanato
 
 
 Caritas Ambrosiana Foundation: 
+
 Claudia Biondi
+
 Sabrina Ignazi
 
 
@@ -49,9 +54,15 @@ Politecnico di Milano:
 
 Giovanni Agosta 
 
-Maresa Bertolo 
+Maresa Bertolo
 
 Anca Serbanescu 
+
+Multidisciplinary Projects Students:
+
+Gina-Josephine Fischer
+
+Pasquale Occhinegro
 
 
 SVS DAD Onlus: 
@@ -63,18 +74,19 @@ Claudia Di Palma
 Nicole Piccolo
 
 
-SVSeD: 
+SVSeD:
 
 Mitia Rendiniello 
 
 
 Avatar Designed by Freepik
 
+
 Disco club - Pic by Edoardo Tommasini from Pexels
 
-Lounge Bar - Pic by Pixabay from Pexels
+Lounge bar - Pic by Pixabay from Pexels
 
-night road - Pic by Lisa from Pexels
+Night road - Pic by Lisa from Pexels
 
 Matteos house - Pic by Vecislavas Popa from Pexels
 
@@ -90,10 +102,10 @@ Smartphone - Pic by PhotoMIX Company from Pexels
 
 Flowers - Pic by Lum3n from Pexels
 
-Cycle - Pic by ??? from ???
+Matteo's sprites - Drawings by Letizia Pallone
 
 
-Background music from ???
+Background music - Colorful Flowers by Tokyo Music Walker
 """)
 
 
@@ -101,7 +113,7 @@ Background music from ???
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "FilodiArianna"
+define build.name = "AriadnesThread"
 
 
 ## Sounds and music ############################################################
