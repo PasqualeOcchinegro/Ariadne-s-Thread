@@ -3,12 +3,6 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-#8533FF game purple
-#5A22AD darker purple
-#C49EFF lighter purple
-#4B1D91 even darker purple
-#AB77FF arianna purple
-
 define a = Character("Arianna", color="#AB77FF")
 define m = Character("Matteo", color="229FB5")
 define k = Character("Kim", color="#F2DD6E")
@@ -213,7 +207,7 @@ label start:
 
     label video_no:
     a "Sorry, I'm still uncertain about it, it's not about you, but i really don't feel confident in doing that."
-    show matteo sad
+    show matteo angry
     m "Ok, never mind, forget I even asked that."
     scene bg black
     "{i}The next day she received a message from Matteo."
@@ -329,16 +323,17 @@ label start:
 
 
     label END:
+    scene bg black
     "What you have seen in this game is an example of stalking and abusive relationships."
     "In many cases, violence in abusive relationships follows a predictable cycle."
-    show bg cycle
-    "The “cycle of violence” consists of three phases that repeat themselves constantly."
+    scene bg cycle
+    "The “Cycle of Violence” developed by Lenore E. Walker consists of three phases that repeat themselves constantly."
     "The first is the tension building phase. In this phase, the relationship starts of being fine but then tension begins to build up."
     "The second stage is the actual explosion phase where the physical abuse occurs."
     "The last phase is called the honeymoon phase. In this phase of the cycle of violence, the abuser shows kind and loving behavior towards the victim."
-    "Are you or someone you care about in an abusive relationship? Learn about domestic abuse and by following the link to the following websites."
+    "Are you or someone you care about in an abusive relationship? Learn about domestic abuse in the following links."
     "www.netyx.it is a website created by health and social care professionals that offers information and guidance for people dealing with complicated or difficult relationships."
-    "http://stannefuori.it/ provides help in cases of Domestic Violence and Abuse and explains how to deal with a violent situation."
+    "{a=http://stannefuori.it/}StanneFuori{/a} is an italian website that provides help in cases of domestic violence and abuse and explains how to deal with a violent situation."
     "Thank you for playing."
 
     return

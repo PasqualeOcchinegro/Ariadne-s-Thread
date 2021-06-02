@@ -30,6 +30,41 @@ define config.version = "3.0"
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+This game is a prototype developed by Gina-Josephine Fisher and Pasquale Occhinegro
+with the supervision of prof. Giovanni Agosta and prof. Maresa Bertolo for the Multidisciplinary Project PoliMi course
+held by prof. Paolo Cremonesi.
+
+Disco club - Pic by Edoardo Tommasini from Pexels, public domain content
+
+Lounge bar - Pic by Pixabay from Pexels, public domain content
+
+Night road - Pic by Lisa from Pexels, public domain content
+
+Matteos house - Pic by Vecislavas Popa from Pexels, public domain content
+
+Ariannas house - Pic by Mo from Pexels, public domain content
+
+Office - Pic by Tranmautritam from Pexels, public domain content
+
+Cabin - Pic by Eneida Nieves from Pexels, public domain content
+
+Bar - Pic by ELEVATE from Pexels, public domain content
+
+Smartphone - Pic by PhotoMIX Company from Pexels, public domain content
+
+Flowers - Pic by Lum3n from Pexels, public domain content
+
+Matteo's sprites - Drawings by Letizia Pallone, courtesy of the author
+
+
+Background music - Colorful Flowers by Tokyo Music Walker
+
+
+The game is based on the educational browser game {a=https://storiedallabirinto.polimi.it/index}Il Filo di Arianna{/a}
+
+made with the help of:
+
+
 ATS Milan:
 
 Maria Grazia Cremona
@@ -50,21 +85,6 @@ Claudia Biondi
 Sabrina Ignazi
 
 
-Politecnico di Milano:
-
-Giovanni Agosta 
-
-Maresa Bertolo
-
-Anca Serbanescu 
-
-Multidisciplinary Projects Students:
-
-Gina-Josephine Fischer
-
-Pasquale Occhinegro
-
-
 SVS DAD Onlus: 
 
 Emanuela Borghi
@@ -81,31 +101,6 @@ Mitia Rendiniello
 
 Avatar Designed by Freepik
 
-
-Disco club - Pic by Edoardo Tommasini from Pexels
-
-Lounge bar - Pic by Pixabay from Pexels
-
-Night road - Pic by Lisa from Pexels
-
-Matteos house - Pic by Vecislavas Popa from Pexels
-
-Ariannas house - Pic by Mo from Pexels
-
-Office - Pic by Tranmautritam from Pexels
-
-Cabin - Pic by Eneida Nieves from Pexels
-
-Bar - Pic by ELEVATE from Pexels
-
-Smartphone - Pic by PhotoMIX Company from Pexels
-
-Flowers - Pic by Lum3n from Pexels
-
-Matteo's sprites - Drawings by Letizia Pallone
-
-
-Background music - Colorful Flowers by Tokyo Music Walker
 """)
 
 
